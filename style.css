@@ -114,3 +114,9 @@ transition: all 0.3 ease-in-out;
     .hamburger-icon span:first-child{
         transform: none;
     }
+    .hamburger-icon span:first-child{
+        opacity:1;
+    }
+    .hamburger-icon span:first-child{
+        transform: none;
+    }
