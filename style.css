@@ -84,7 +84,7 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #808080;
+    background-color:#808080;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -134,7 +134,9 @@ a:hover{
 }
 
 /* SECTIONS */
-
+#background{
+    background-color: #add8e6;
+}
 section{
     padding-top: 4vh;
     height: 96vh;
