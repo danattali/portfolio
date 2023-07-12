@@ -233,7 +233,9 @@ section{
 }
 
 /* ABOUT */
-
+#background2{
+    background-color:#00ffff;
+}
 #about{
     position:relative;
 }
