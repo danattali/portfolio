@@ -29,6 +29,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 29vh;
+    background-color: #808080;
 }
 .nav-links{
     gap: 2rem;
@@ -83,7 +84,7 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: #808080;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
