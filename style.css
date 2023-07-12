@@ -279,3 +279,11 @@ section{
     width: 400px;
     margin: auto 0;
 }
+
+.icon{
+    cursor: default;
+}
+.details-container{
+    cursor: default;
+    background-color: #ffa500;
+}
