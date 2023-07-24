@@ -5,5 +5,5 @@ I'm Dan ATTALI, a Israeli-French fullstack developper. All coding projects are b
 This project is my Portfolio using HTML, CSS, Bootstrap, JavaScript and including one TypeScript project
 
 <p align="left">
-    <a href="danattaliportfolio.netlify.app">
+    <a href="danattaliportfolio.netlify.app"></a>
 </p>
