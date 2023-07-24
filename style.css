@@ -344,7 +344,7 @@ section{
     cursor:default;
 }
 
-#projectGallery{
+#projectGallery .container{
         display: flex;
         text-align: initial;
         flex-wrap: wrap;
