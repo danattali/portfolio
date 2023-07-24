@@ -343,3 +343,24 @@ section{
 .article-icon{
     cursor:default;
 }
+
+#projectGallery{
+        display: flex;
+        text-align: initial;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        height: 500px;
+        justify-content: center;
+}
+.background{
+    background-color: whitesmoke;
+}
+.card{
+   text-align: center;  
+}
+.project2{
+    height: 200px;
+}
+.project3{
+    height: 160px;
+}
