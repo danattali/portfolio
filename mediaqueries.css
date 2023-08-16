@@ -121,4 +121,8 @@
         flex-direction: column;
         padding: auto;
     }
+
+    #project1 {
+        height: fit-content;
+    }
 }

@@ -405,7 +405,11 @@ section {
 }
 
 #project1 {
-    height: 600px;
+    height: 500px;
+}
+
+#button {
+    text-align: center;
 }
 
 .project2 {
