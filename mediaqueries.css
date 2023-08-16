@@ -122,7 +122,9 @@
         padding: auto;
     }
 
-    #project1 {
+    #project1,
+    #project2,
+    #project3 {
         height: fit-content;
     }
 }
