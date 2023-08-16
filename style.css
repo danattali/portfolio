@@ -412,12 +412,12 @@ section {
     text-align: center;
 }
 
-.project2 {
-    height: 80px;
+#project2 {
+    height: 500px;
 }
 
-.project3 {
-    height: 160px;
+#project3 {
+    height: 500px;
 }
 
 /* contact section */
