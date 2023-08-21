@@ -422,7 +422,16 @@ section {
     height: 500px;
 }
 
+.descriptionContainer {
+    color: #add8e6;
+}
+
+.descriptionContainer2 {
+    color: #ff7f50;
+}
+
 /* contact section */
+
 
 #contact {
     display: flex;
