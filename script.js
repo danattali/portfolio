@@ -4,3 +4,169 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+// PROJECT CARDS - projects Object array
+let projects = [
+  {
+    name: "My Account",
+    description:
+      "My Account is a tool that helps you keep track on your Bank acount balance",
+    stack: "HTML, JavaScript, OOP, Bootstrap",
+    projectField: "Front-End",
+    repositoryUrl: "https://github.com/danattali/ACCOUNT-master.git",
+    websiteLink: "https://bankaccountdan.netlify.app",
+    websiteImg: "./assets/myAccount.png",
+  },
+  {
+    name: "ManageU",
+    description: "ManageU is a tool to keep tracking your daily Tasks",
+    stack: "HTML, TypeScript, Bootstrap",
+    projectField: "Front-End",
+    repositoryUrl: "https://github.com/danattali/ManageU.git",
+    websiteLink: "https://danmanageu.netlify.app",
+    websiteImg: "./assets/managU.png",
+  },
+  {
+    name: "Mardi Gras",
+    description:
+      "Mardi Gras New Orleans.<br>Mardi Gras is about music, parades, picnics, floats and excitement. It's one big holiday in New Orleans!",
+    stack: "HTML, SAAS, JavaScript, Bootstrap",
+    projectField: "Front-End",
+    repositoryUrl: "https://github.com/danattali/mardiGras.git",
+    websiteLink: "danmardigras.netlify.app",
+    websiteImg: "./assets/mardigras.png",
+  },
+  {
+    name: "Portfolio",
+    description:
+      "This portfolio is a a compilation of professional materials that exemplifies your beliefs, skills, qualifications, education, training, and experiences.",
+    stack: "HTML,CSS,Bootstrap, JavaScript",
+    projectField: "Front-End",
+    repositoryUrl:
+      "https://github.com/danattali/portfolio.git",
+    websiteLink: "https://danattaliportfolio.netlify.app",
+    websiteImg: "./assets/danportfolio.png",
+  },
+  {
+    name: "Weather App",
+    description:
+      "Weather App allows you to search for the current weather in Cities around the world",
+    stack: "HTML, CSS, JavaScript, REST API",
+    projectField: "Front-End",
+    repositoryUrl: "https://github.com/OvedHarari/WeatherApp.git",
+    websiteLink: "https://oved-harari-weatherapp.netlify.app",
+    websiteImg: "./img/projectPics/weatherApp.png",
+  },
+
+  {
+    name: "Electrix Shop",
+    description: "Electrix Shop is an example of ecommers store",
+    stack: "HTML, JavaScript",
+    projectField: "Front-End",
+    repositoryUrl: "",
+    websiteLink: "",
+    websiteImg: "",
+  },
+
+
+];
+// PROJECT CARDS - Adding progects card to page
+
+function showCards() {
+  for (let i = 0; i < projects.length; i++)
+    // for (let i = projects.length; i > -1; i--) ??????????????????????????????
+    // let firstProject = projects.length;
+    switch (i) {
+      case 0:
+        document.getElementById("portfolioCards").innerHTML += `
+        
+        <div class="portfolio-item">
+                    <div class="image">
+                        <img src="${projects[i].websiteImg}" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>${projects[i].name}<span> Last
+                                        Project</span></h3>
+                        <p>${projects[i].description}</p>
+                        <hr>
+                        <p>
+                            <strong>Stack:</strong> <span class="w-date">${projects[i].stack}
+                            </span><br>
+                            <span> <strong>Project Field:</strong> ${projects[i].projectField}
+                            </span>
+                        </p>
+                        <div class="icons">
+                            <a href="${projects[i].repositoryUrl}" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="${projects[i].websiteLink}" class="icon" target="_blank">  
+                            <i class="fab fa-edge-legacy"></i>                                                       
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                `;
+        break;
+      case projects.length - 1:
+        document.getElementById("portfolioCards").innerHTML += `
+        
+        <div class="portfolio-item">
+                    <div class="image">
+                        <img src="${projects[i].websiteImg}" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>${projects[i].name}<span> First
+                                        Project</span></h3>
+                        <p>${projects[i].description}</p>
+                        <hr>
+                        <p>
+                            <strong>Stack:</strong> <span class="w-date">${projects[i].stack}
+                            </span><br>
+                            <span> <strong>Project Field:</strong> ${projects[i].projectField}
+                            </span>
+                        </p>
+                        <div class="icons">
+                            <a href="${projects[i].repositoryUrl}" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="${projects[i].websiteLink}" class="icon" target="_blank">
+                               <i class="fab fa-edge-legacy"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                `;
+        break;
+
+      default:
+        document.getElementById("portfolioCards").innerHTML += `
+        
+        <div class="portfolio-item">
+                    <div class="image">
+                        <img src="${projects[i].websiteImg}" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>${projects[i].name}</h3>
+                        <p>${projects[i].description}</p>
+                        <hr>
+                        <p>
+                            <strong>Stack:</strong> <span class="w-date">${projects[i].stack}
+                            </span><br>
+                            <span> <strong>Project Field:</strong> ${projects[i].projectField}
+                            </span>
+                        </p>
+                        <div class="icons">
+                            <a href="${projects[i].repositoryUrl}" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="${projects[i].websiteLink}" class="icon" target="_blank">
+                                <i class="fab fa-edge-legacy"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                `;
+
+        break;
+    }
+}
+showCards();
