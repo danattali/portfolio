@@ -7,6 +7,17 @@ function toggleMenu() {
 // PROJECT CARDS - projects Object array
 let projects = [
   {
+    name: "Portfolio",
+    description:
+      "This portfolio is a a compilation of professional materials that exemplifies your beliefs, skills, qualifications, education, training, and experiences.",
+    stack: "HTML,CSS,Bootstrap, JavaScript",
+    projectField: "Front-End",
+    repositoryUrl:
+      "https://github.com/danattali/portfolio.git",
+    websiteLink: "https://danattaliportfolio.netlify.app",
+    websiteImg: "./assets/danportfolio.png",
+  },
+  {
     name: "My Account",
     description:
       "My Account is a tool that helps you keep track on your Bank acount balance",
@@ -35,17 +46,7 @@ let projects = [
     websiteLink: "danmardigras.netlify.app",
     websiteImg: "./assets/mardigras.png",
   },
-  {
-    name: "Portfolio",
-    description:
-      "This portfolio is a a compilation of professional materials that exemplifies your beliefs, skills, qualifications, education, training, and experiences.",
-    stack: "HTML,CSS,Bootstrap, JavaScript",
-    projectField: "Front-End",
-    repositoryUrl:
-      "https://github.com/danattali/portfolio.git",
-    websiteLink: "https://danattaliportfolio.netlify.app",
-    websiteImg: "./assets/danportfolio.png",
-  },
+
   {
     name: "Weather App",
     description:
