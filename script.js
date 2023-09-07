@@ -65,8 +65,7 @@ let projects = [
 
 function showCards() {
   for (let i = 0; i < projects.length; i++)
-    // for (let i = projects.length; i > -1; i--) ??????????????????????????????
-    // let firstProject = projects.length;
+
     switch (i) {
       case 0:
         document.getElementById("portfolioCards").innerHTML += `
