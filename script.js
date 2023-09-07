@@ -56,16 +56,7 @@ let projects = [
     websiteImg: "./assets/storeImage.png",
   },
 
-  {
-    name: "Weather App",
-    description:
-      "Weather App allows you to search for the current weather in Cities around the world",
-    stack: "HTML, CSS, JavaScript, REST API",
-    projectField: "Front-End",
-    repositoryUrl: "https://github.com/OvedHarari/WeatherApp.git",
-    websiteLink: "https://oved-harari-weatherapp.netlify.app",
-    websiteImg: "./img/projectPics/weatherApp.png",
-  },
+
 
 
 
