@@ -46,6 +46,15 @@ let projects = [
     websiteLink: "danmardigras.netlify.app",
     websiteImg: "./assets/mardigras.png",
   },
+  {
+    name: "Electro Shop",
+    description: "Electro Shop is an example of ecommers store",
+    stack: "HTML, JavaScript",
+    projectField: "Front-End",
+    repositoryUrl: "https://github.com/danattali/store.git",
+    websiteLink: "danstore.netlify.app",
+    websiteImg: "./assets/storeImage.png",
+  },
 
   {
     name: "Weather App",
@@ -58,15 +67,6 @@ let projects = [
     websiteImg: "./img/projectPics/weatherApp.png",
   },
 
-  {
-    name: "Electrix Shop",
-    description: "Electrix Shop is an example of ecommers store",
-    stack: "HTML, JavaScript",
-    projectField: "Front-End",
-    repositoryUrl: "",
-    websiteLink: "",
-    websiteImg: "",
-  },
 
 
 ];
