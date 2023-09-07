@@ -74,7 +74,7 @@ function showCards() {
                     <div class="image">
                         <img src="${projects[i].websiteImg}" alt="">
                     </div>
-                    <div class="hover-items">
+                    <div class="hover-items bg-primary">
                         <h3>${projects[i].name}<span> Last
                                         Project</span></h3>
                         <p>${projects[i].description}</p>
@@ -104,7 +104,7 @@ function showCards() {
                     <div class="image">
                         <img src="${projects[i].websiteImg}" alt="">
                     </div>
-                    <div class="hover-items">
+                    <div class="hover-items bg-primary">
                         <h3>${projects[i].name}<span> First
                                         Project</span></h3>
                         <p>${projects[i].description}</p>
@@ -135,7 +135,7 @@ function showCards() {
                     <div class="image">
                         <img src="${projects[i].websiteImg}" alt="">
                     </div>
-                    <div class="hover-items">
+                    <div class="hover-items bg-primary">
                         <h3>${projects[i].name}</h3>
                         <p>${projects[i].description}</p>
                         <hr>
