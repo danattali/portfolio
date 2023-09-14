@@ -179,7 +179,7 @@ document
       notes: "Check this out!",
     };
 
-    emailjs.send("service_odczyjr", "template_johswnj", templateParams).then(
+    emailjs.send("service_o3fc346", "template_btdlmcj", templateParams).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         sessionStorage["submit"] = response.status;
