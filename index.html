@@ -209,23 +209,104 @@
     </section>
 
 
-    <section id="contact">
-        <p class="section__text__p1">Get in touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:danattali242@gmail.com">danattali242@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/dan-attali/">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/facebook.png" alt="Facebook icon" class="icon contact-icon facebook-icon" />
-                <p><a href="https://www.facebook.com/dan.attali">Facebook</a></p>
+    <section class="container contact" id="contact">
+        <div class="contact-container">
+
+            <div class="contact-content-con">
+                <div class="left-contact">
+                    <h4>Contact me here</h4>
+                    <p>
+                        Have a question or want to work together?
+                        Please fill up the form and "Submit" to start communication.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Location</span>
+                            </div>
+                            <p>
+                                : Tel Aviv, Israel
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </div>
+                            <p>
+                                <span>: danattali242@gmail.com</span>
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-mobile"></i>
+                                <span>Mobile Number</span>
+                            </div>
+                            <p>
+                                <span>: +972 58 689 1012</span>
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-language"></i>
+                                <span>Languages</span>
+                            </div>
+                            <p>
+                                <span>: Hebrew, French, English </span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="contact-icons">
+                        <div class="contact-icon">
+                            <a href="https://www.linkedin.com/in/dan-attali/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.facebook.com/dan.attali" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://github.com/danattali" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-con btn-download">
+                        <a href="./assets/Dan ATTALI cv (1).docx" class="main-btn" download>
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-contact">
+                    <form action="" id="contactForm" class="contact-form">
+                        <div class="input-control i-c-2">
+                            <input type="text" id="from-name" required placeholder="YOUR NAME">
+                            <input type="email" id="from-email" required placeholder="YOUR EMAIL">
+                        </div>
+                        <div class="input-control">
+                            <input type="text" id="from-subject" required placeholder="ENTER SUBJECT">
+                        </div>
+                        <div class="input-control">
+                            <textarea name="" id="email-message" cols="15" rows="8" itemid="email-message" required
+                                placeholder="Message Here..."></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <a class="main-btn" value="SUBMIT">
+                                <input class="btn-text submit-input" type="submit" value="Submit"
+                                    data-id="form-success">
+                                <span class="btn-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
+        <!-- popup success message -->
+        <div class="popup" id="popup">
+
+        </div>
+
     </section>
     <footer id="footer">
         <div class="nav-links-container">

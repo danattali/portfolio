@@ -499,48 +499,121 @@ section {
 
 
 /* contact section */
-
-
-#contact {
+.contact-content-con {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
-    gap: 2.5rem;
+    padding-top: 3.5rem;
 }
 
-.contact-info-upper-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53)0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    margin: 2rem auto;
-    padding: 0.5rem;
+.contact-content-con .left-contact {
+    flex: 2;
 }
 
-.contact-info-container {
+.contact-content-con .left-contact h4 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.contact-content-con .left-contact p {
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+.contact-content-con .left-contact .btn-download {
+    padding-top: 1.5rem;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item p {
+    margin: 0.3rem 0 !important;
+    padding: 0 !important;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.contact-content-con .left-contact .contact-icon {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.contact-content-con .left-contact .contact-icon a {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    background-color: var(--color-grey-5);
+    cursor: pointer;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 0.4rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact-content-con .left-contact .contact-icon a:hover {
+    background-color: var(--color-secondary);
+}
+
+.contact-content-con .left-contact .contact-icon a:hover i {
+    color: var(--color-primary);
+}
+
+.contact-content-con .left-contact .contact-icon a i {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
+    font-size: 1.3rem;
 }
 
-.contact-info-container p {
-    font-size: larger;
+.contact-content-con .right-contact {
+    flex: 3;
+    margin-left: 3rem;
 }
 
-.contact-icon {
-    cursor: default;
+.contact-content-con .right-contact .input-control {
+    margin: 1.5rem 0;
 }
 
-.email-icon {
-    height: 2.5rem;
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-grey-5);
+    width: 100%;
+    color: var(--color-white);
+    resize: none;
 }
 
-.facebook-icon {
-    height: 2.5rem;
+.contact-content-con .right-contact .i-c-2 {
+    display: flex;
+}
+
+.contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 1.5rem;
+}
+
+.contact-content-con .right-contact .submit-btn {
+    display: flex;
+    justify-content: flex-end;
 }
 
 #footer {

@@ -161,3 +161,60 @@ function showCards() {
     }
 }
 showCards();
+// sendEmail() - on-succsess calling:
+//setSessionStorage();
+// setSuccessMessage();
+//openPopup();
+//Reset form;
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    var templateParams = {
+      from_name: document.getElementById("from-name").value,
+      from_email: document.getElementById("from-email").value,
+      subject: document.getElementById("from-subject").value,
+      message: document.getElementById("email-message").value,
+      notes: "Check this out!",
+    };
+
+    emailjs.send("service_odczyjr", "template_johswnj", templateParams).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        sessionStorage["submit"] = response.status;
+        setSessionStorage();
+        setSuccessMessage();
+        openPopup();
+        document.getElementById("contactForm").reset();
+      },
+
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  });
+
+/* open/close popup */
+let popup = document.getElementById("popup");
+function openPopup() {
+  popup.classList.add("open-popup");
+}
+function closePopup() {
+  popup.classList.remove("open-popup");
+}
+/* popup message on submit */
+function setSuccessMessage() {
+  console.log("function 3 called");
+  document.getElementById("popup").innerHTML = `
+<div class="success-icon"><i class="fas fa-check-circle"></i></div>
+<h4 id="message-title">Thank You
+${JSON.parse(sessionStorage.getItem("from-name"))}!</h4>
+<p class="text-start">The following was sent:<br><br>
+<b>Subject:</b> 
+${JSON.parse(sessionStorage.getItem("from-subject"))}<br><br>
+<b>Message:</b><br>
+${JSON.parse(sessionStorage.getItem("email-message"))}</p><br>
+<button class="close" type="button" onclick="closePopup()"></button>
+  `;
+}
