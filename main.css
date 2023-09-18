@@ -525,6 +525,11 @@ section {
 
 .contact-content-con .left-contact .btn-download {
     padding-top: 1.5rem;
+    border: 1px solid #000;
+    width: 8rem;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: center;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item {
@@ -601,9 +606,9 @@ section {
     padding: 0.8rem 1.1rem;
     outline: none;
     border: none;
-    background-color: var(--color-grey-5);
+    background-color: #fff;
     width: 100%;
-    color: var(--color-white);
+    color: #fff;
     resize: none;
 }
 
