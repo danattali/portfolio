@@ -625,6 +625,81 @@ section {
     justify-content: flex-end;
 }
 
+.popup {
+    width: 500px;
+    height: 500px;
+    color: var(--color-white);
+    background-color: var(--color-grey-4);
+    border-radius: 60px;
+    position: absolute;
+    left: 50vw;
+    border: 1px solid #000;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    box-shadow: var(--box-shadow-2);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    justify-content: center;
+}
+
+.popup .success-icon {
+    color: var(--color-secondary);
+    font-size: 6rem;
+    margin-top: -4rem;
+    text-shadow: var(--box-shadow-2);
+}
+
+.popup h4 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0px 0 10px;
+}
+
+.popup p {
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+.popup .close {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.popup .close:hover {
+    opacity: 1;
+}
+
+.popup .close:before,
+.popup .close:after {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    content: " ";
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+}
+
+.popup .close:before {
+    transform: rotate(45deg);
+}
+
+.popup .close:after {
+    transform: rotate(-45deg);
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 #footer {
     background-color: #808080;
 }

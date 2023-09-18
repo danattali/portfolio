@@ -161,6 +161,27 @@ function showCards() {
     }
 }
 showCards();
+function setSessionStorage() {
+  console.log("function 3 called");
+  sessionStorage.setItem(
+    "from-name",
+    JSON.stringify(document.getElementById("from-name").value)
+  );
+  sessionStorage.setItem(
+    "from-email",
+    JSON.stringify(document.getElementById("from-email").value)
+  );
+  sessionStorage.setItem(
+    "from-subject",
+    JSON.stringify(document.getElementById("from-subject").value)
+  );
+  sessionStorage.setItem(
+    "email-message",
+    JSON.stringify(document.getElementById("email-message").value)
+  );
+}
+
+
 // sendEmail() - on-succsess calling:
 //setSessionStorage();
 // setSuccessMessage();
@@ -203,6 +224,7 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove("open-popup");
 }
+
 /* popup message on submit */
 function setSuccessMessage() {
   console.log("function 3 called");
