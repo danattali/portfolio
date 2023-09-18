@@ -499,6 +499,10 @@ section {
 
 
 /* contact section */
+#contactBackground {
+    background-color: skyblue;
+}
+
 .contact-content-con {
     display: flex;
     padding-top: 3.5rem;
