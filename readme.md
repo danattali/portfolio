@@ -6,7 +6,7 @@ Portfolio
 
 This portfolio was written in HTML,CSS,bootstrap and JS.
 The portfolio was written on a single index file with hidden contant that reveals according to the navbar selection
-
+In the contact form, I am using EmailJS - https://www.emailjs.com/  services to send me the contact form
 The project contains general information about me with additional projects to show my abilities that you
 may find in the portfolio section.
 
