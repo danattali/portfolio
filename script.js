@@ -43,7 +43,7 @@ let projects = [
     stack: "HTML, SAAS, JavaScript, Bootstrap",
     projectField: "Front-End",
     repositoryUrl: "https://github.com/danattali/mardiGras.git",
-    websiteLink: "danmardigras.netlify.app",
+    websiteLink: "https://danmardigras.netlify.app",
     websiteImg: "./assets/mardigras.png",
   },
   {
@@ -52,7 +52,7 @@ let projects = [
     stack: "HTML, JavaScript",
     projectField: "Front-End",
     repositoryUrl: "https://github.com/danattali/store.git",
-    websiteLink: "danstore.netlify.app",
+    websiteLink: "https://danstore.netlify.app",
     websiteImg: "./assets/storeImage.png",
   },
 
